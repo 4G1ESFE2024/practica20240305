@@ -23,7 +23,7 @@ CREATE TABLE DetFacturaVentas (
     Producto VARCHAR(100) NOT NULL,
     Cantidad INT NOT NULL,
     PrecioUnitario DECIMAL(10,2) NOT NULL,
-    FOREIGN KEY (IdFacturaVenta) REFERENCES FacturaVentas(Id)
+    FOREIGN KEY (IdFacturaVenta) REFERENCES FacturaVentas(Id) ON DELETE CASCADE
 );
 GO
 
